@@ -1,5 +1,4 @@
 @import "base/variables";
-
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -22,3 +21,4 @@ a:hover {
 @import "blocks/advantages";
 @import "blocks/consultation";
 @import "blocks/forms";
+@import "base/media";
