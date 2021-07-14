@@ -27,9 +27,17 @@
       justify-content: space-around;
     }
   }
+  .footer {
+    &__info {
+      top: 100%;
+      width: 100%;
+      height: 220px;
+      padding: 30px 53px 56px;
+    }
+  }
 }
 
-@media (max-width: 768.8px) {
+@media (max-width: 767.8px) {
   .header {
     &__phone {
       font-size: 15px;
