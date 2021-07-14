@@ -15,6 +15,18 @@
     margin: 0 auto;
     margin-top: 35px;
   }
+  .catalog {
+    &__tabs {
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+    &__tab {
+      margin-bottom: 9px;
+    }
+    &__content {
+      justify-content: space-around;
+    }
+  }
 }
 
 @media (max-width: 768.8px) {
@@ -41,6 +53,11 @@
     width: 100%;
     img {
       width: 100%;
+    }
+  }
+  .catalog {
+    &__content {
+      padding: 0 10px;
     }
   }
 }
@@ -101,5 +118,19 @@
   }
   .feed-form {
     width: 100%;
+  }
+  .feedback {
+    &__item {
+      flex-direction: column;
+    }
+    &__img {
+      margin: 0 auto;
+      img {
+        margin: 0;
+      }
+    }
+    &__text {
+      margin-top: 15px;
+    }
   }
 }

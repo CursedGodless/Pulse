@@ -1,0 +1,43 @@
+.feedback {
+  &__wrapper {
+    max-width: 910px;
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 0 10px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+  &__img {
+    img {
+      width: 169px;
+      height: 169px;
+      border-radius: 50%;
+      margin-right: 60px;
+    }
+  }
+  &__text {
+    max-width: 676px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: $second-color;
+  }
+  &__marathon {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #646464;
+  }
+  &__descr {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $second-color;
+  }
+}
