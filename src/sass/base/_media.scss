@@ -105,9 +105,7 @@
       margin-bottom: 7px;
     }
   }
-  .button_large {
-    width: 100%;
-  }
+
   .advantages {
     padding-top: 30px;
     &__wrapper {
@@ -125,7 +123,10 @@
     padding: 50px 10px 58px;
   }
   .feed-form {
-    width: 100%;
+    width: 300px;
+    &_modal {
+      width: 100%;
+    }
   }
   .feedback {
     &__item {
@@ -139,6 +140,14 @@
     }
     &__text {
       margin-top: 15px;
+    }
+  }
+  .modal {
+    padding: 24px 21px 12px;
+    width: 300px;
+    &__close {
+      right: 5px;
+      top: 5px;
     }
   }
 }
