@@ -5,15 +5,13 @@ $(document).ready(function () {
     autoplaySpeed: 1500,
     prevArrow: '<button "type="button" class="slick-prev"><img src="../icons/left_arrow.png" alt=""></button>',
     nextArrow: '<button "type="button" class="slick-next"><img src="../icons/right_arrow.png" alt=""></button>',
-    responsive: [
-      {
-        breakpoint: 991.8,
-        settings: {
-          arrows: false,
-          dots: true
-        }
+    responsive: [{
+      breakpoint: 991.8,
+      settings: {
+        arrows: false,
+        dots: true
       }
-    ]
+    }]
   });
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function () {
     $(this)
@@ -33,4 +31,17 @@ $(document).ready(function () {
   toggleSlide('.catalog-item__more');
   toggleSlide('.catalog-item__back');
 
+  $('[data-modal=consultation]').on('click', function () {
+    $('.overlay,#consultation').fadeIn();
+  });
+  $('.modal__close').on('click', function () {
+    $('.overlay,#consultation,#order,#thanks').fadeOut();
+  });
+
+  $('.button_mini').each(function (i) {
+    $(this).on('click', function () {
+      $('#order .modal__subtitle').text($('.catalog-item__subtitle').eq(i).text());
+      $('.overlay,#order').fadeIn();
+    })
+  });
 });
