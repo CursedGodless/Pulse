@@ -48,6 +48,13 @@
     min-height: 140px;
     padding: 34px 39px 32px;
   }
+  .error {
+    border: 1px solid red;
+  }
+  label.error {
+    border: none;
+    margin-bottom: 15px;
+  }
 }
 
 #consultation,
